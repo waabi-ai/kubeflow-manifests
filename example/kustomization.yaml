@@ -57,8 +57,6 @@ resources:
 - ../common/networkpolicies/base
 # Kubeflow Roles
 - ../common/kubeflow-roles/base
-# Kubeflow Istio Resources
-- ../common/istio/kubeflow-istio-resources/base
 # Kubeflow Pipelines
 - ../applications/pipeline/upstream/env/cert-manager/platform-agnostic-multi-user
 # Katib
