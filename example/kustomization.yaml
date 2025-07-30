@@ -33,13 +33,6 @@ sortOptions:
     - ValidatingWebhookConfiguration
 
 resources:
-# Cert-Manager
-- ../common/cert-manager/base
-- ../common/cert-manager/kubeflow-issuer/base
-# Istio
-- ../common/istio/istio-crds/base
-- ../common/istio/istio-namespace/base
-- ../common/istio/istio-install/overlays/oauth2-proxy
 # NOTE: For Google Kubernetes Engine (GKE), use:
 # - ../common/istio/istio-install/overlays/gke
 #GKE mounts `/opt/cni/bin` as read-only for security reasons, preventing the Istio CNI installer from writing the CNI binary.
@@ -91,7 +84,7 @@ resources:
 # Training Operator
 - ../applications/training-operator/upstream/overlays/kubeflow
 # User namespace
-- ../common/user-namespace/base
+# - ../common/user-namespace/base
 # KServe
 - ../applications/kserve/kserve
 - ../applications/kserve/models-web-app/overlays/kubeflow
